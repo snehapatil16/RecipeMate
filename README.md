@@ -5,77 +5,32 @@
 
 The `Recipe` schema represents the structure of the recipe data in the database. Each recipe has a name, description, image URL, preparation time, cooking time, an array of directions, and an array of ingredients.
 
-- `name`: String, required.
-  - We use the String type because a recipe name is textual content.
-  - The `required` validator is used because every recipe should have a name for identification.
-
-- `description`: String, required.
-  - Similar to `name`, we use a String to hold the text describing the recipe.
-  - It is marked `required` because a description is necessary to provide context for the recipe.
-
-- `image`: String, required.
-  - This is a String to store the URL of the recipe's image.
-  - We chose not to make this `required` initially but assuming every recipe should have an image for better user experience, it has been updated to `required`.
-
-- `prepTime` and `cookTime`: Number, required.
-  - Both are stored as Numbers representing the time in minutes.
-  - These fields are `required` because knowing how long it takes to prepare and cook is essential for planning.
-
-- `directions`: Array of String, required.
-  - An array is used because the directions for a recipe are a list of steps.
-  - Each step is a String, and the array is marked `required` because a recipe without directions is incomplete.
-
-- `ingredients`: [IngredientSchema].
-  - This is an array of subdocuments based on `IngredientSchema`.
-  - Using a subdocument allows us to group related attributes of an ingredient together, like its name and amount.
-
-- `userReviews`: [{type: mongoose.Schema.Types.ObjectId, ref: 'Reviews'}].
-  - This is an array of ObjectIds linking to the `Review` model.
-  - This relationship allows us to associate reviews directly with a recipe.
+- `name`: String, required. The name of the recipe for identification.
+- `description`: String, required. Description providing context for the recipe.
+- `image`: String, required. URL of the recipe's image.
+- `prepTime` & `cookTime: Number`, required. Time in minutes for preparation and cooking.
+- `directions`: Array of String, required. Step-by-step instructions.
+- `ingredients`: Array of subdocuments based on IngredientSchema.
+- `userReviews`: Array of ObjectIds linking to the Review model.
 
 ### Reviews Schema
 
 The `Reviews` schema represents user reviews for the recipes.
 
-- `description`: String, required.
-  - We use a String for the review text.
-  - The `required` validator ensures that every review includes feedback.
-
-- `rating`: Number, required.
-  - A Number is the best choice for a star rating system.
-  - The `required` validator is necessary to quantify the reviewer's opinion.
-
-- `createdAt`: Date, default to Date.now.
-  - The Date type is used to timestamp the creation of a review.
-  - The default value is set to the current date and time when the review is created.
-
-- `user`: ObjectId, required, ref: 'User'.
-  - This field stores a reference to the `User` model, linking a review to the user who created it.
-  - The `required` validator ensures accountability and traceability for reviews.
+- `description`: String, required. Textual feedback for the review.
+- `rating`: Number, required. Star rating for the recipe.
+- `createdAt`: Date, default to Date.now. Timestamp of review creation.
+- `user`: ObjectId, required, ref: 'User'. Reference to the user who created the review.
 
 ### User Schema
 
 The `User` schema represents the users who can create recipes and leave reviews.
 
 - `name`: Subdocument, required.
-  - A subdocument is used to enclose the first and last names.
-  - We require this subdocument so that each user has a proper identity within the system.
-
   - `firstName`: String, required.
-    - Represents the user's first name.
-    - String type is used for textual content and marked `required`.
-
   - `lastName`: String, required.
-    - Represents the user's last name.
-    - Also a String and `required` for a full representation of the user's name.
-
-- `username`: String, unique.
-  - This is a unique identifier for the user.
-  - The `unique` attribute ensures that no two users can have the same username, which is important for login and user identification.
-
-- `email`: String, unique.
-  - Used to store the user's email address.
-  - It is marked `unique` to prevent multiple accounts from being registered with the same email.
+- `username`: String, unique. Unique identifier for login.
+- `email`: String, unique. User's email address.
 
 ## RESTful API Endpoints
 
