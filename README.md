@@ -5,9 +5,6 @@
 
 The `Recipe` schema represents the structure of the recipe data in the database. Each recipe has a name, description, image URL, preparation time, cooking time, an array of directions, and an array of ingredients.
 
-![Home Page](<img width="1440" alt="Screenshot 2024-07-12 at 4 55 28 PM" src="https://github.com/user-attachments/assets/af951fa2-9c5b-4e9a-859d-bd839c1b5de6">
-)
-
 - `name`: String, required.
   - We use the String type because a recipe name is textual content.
   - The `required` validator is used because every recipe should have a name for identification.
