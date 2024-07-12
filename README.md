@@ -1,6 +1,13 @@
 # Cookbook API Documentation
 # By Sneha Patil & Annika Sonne
 
+### Running the Project
+
+You can run the entire project with just one command. This setup simplifies the development process by building the client and starting the server in one step.
+
+1. cd client -> `npm install --save-dev rimraf`
+2. cd server -> `npm run dev`
+
 ### Recipe Schema
 
 The `Recipe` schema represents the structure of the recipe data in the database. Each recipe has a name, description, image URL, preparation time, cooking time, an array of directions, and an array of ingredients.
