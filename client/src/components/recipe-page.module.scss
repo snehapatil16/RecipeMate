@@ -1,0 +1,159 @@
+.recipeDetailContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.recipeDetailTextContent {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.recipeDetailImage {
+  width: 500px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 5px solid white;
+  margin-bottom: 20px;
+}
+
+
+.recipeDescription {
+  color : #666
+}
+
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #cc73bc;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  &:hover {
+    background-color: #c38bb9;
+  }
+}
+
+.ingredients ul,
+.directions ol {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0; 
+  text-align: left; 
+  display: block; 
+  max-width: max-content; 
+}
+
+.ingredients li,
+.directions li {
+  display: list-item; 
+  text-align: left; 
+}
+
+
+.noReviews {
+  font-style: italic;
+  color: #999;
+}
+
+.reviewSection {
+  max-width: 800px; 
+  margin: 20px auto; 
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+
+.reviewHeading {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.reviewList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.reviewItem {
+  background-color: #f9f9f9; 
+  border-radius: 4px;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px; // Creates space between reviews
+
+  .reviewContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; // Spreads out content across the horizontal space
+  }
+
+  .reviewText {
+    flex-grow: 1;
+    margin-right: 20px;
+  }
+
+  .reviewRating {
+    display: flex;
+    align-items: center;
+
+    .ratingLabel {
+      margin-right: 5px;
+    }
+
+    .ratingValue {
+      font-weight: bold;
+    }
+  }
+}
+
+.reviewForm {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.inputField,
+.textareaField {
+  padding: 8px;
+  margin: 8px 0; // Adds space between form fields
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.submitButton {
+  background-color: #5cb85c; // A green color for submit buttons
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: #4cae4c;
+  }
+}

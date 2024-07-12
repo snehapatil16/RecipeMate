@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+
+.form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+  }
+  
+  .formSection {
+    margin-bottom: 20px;
+  }
+  
+  .formLabel {
+    display: block;
+    margin-bottom: 5px;
+    color: #171717;
+    font-weight: bold;
+  }
+  
+  .formInput, .formTextarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .formTextarea {
+    height: 100px;
+    resize: vertical;
+  }
+  
+  .ingredientSection {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .ingredientInput {
+    flex: 1;
+    min-width: 0;
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .directionSection {
+    margin-bottom: 20px;
+  }
+  
+  .directionInputContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .directionInput {
+    flex: 1;
+    min-width: 0;
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  
+  .removeButton, .addButton {
+    padding: 10px 15px;
+    background-color: #dc7632;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 5px;
+    font-family: "Lucida Console", "Courier New", monospace;
+  }
+  
+  .removeButton:hover, .addButton:hover {
+    background-color: #f39a5f;
+  }
+  
+  .addButton {
+    background-color: #ba8cdd;
+    margin-bottom: 20px;
+  }
+  
+  .addButton:hover {
+    background-color: #e36b9b;
+  }
+  
+  .formSubmitButton {
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    background-color: #5aa87e;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Lucida Console", "Courier New", monospace;
+  }
+  
+  .formSubmitButton:hover {
+    background-color: #e36b9b;
+  }
+  
+  .formBackLink {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #5bc0de;
+    text-decoration: none;
+  }
+  
+  .formBackLink:hover {
+    text-decoration: underline;
+  }
+  
+  h1 {
+    font-style: italic;
+  }

@@ -1,0 +1,50 @@
+.recipeCard {
+  border: 1px solid #ddd;
+  padding: 20px;
+  padding-right: 40px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  cursor: pointer; 
+  transition: transform 0.2s ease, box-shadow 0.2s ease; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.recipeCard:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.recipeCardImage {
+  width: 100px; /* Set width to 100% of the container */
+  height: 100px; /* Set a fixed height to maintain square shape */
+  object-fit: cover; 
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.recipeCardTitle {
+  margin: 10px 0;
+}
+
+.recipeCardDescription {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.recipeCardTime span {
+  display: block;
+  font-size: 0.8rem;
+  color: #333;
+  margin: 5px 0;
+}
+
+.recipeCardContent {
+  flex-grow: 1;  
+  margin-right: 20px; 
+}

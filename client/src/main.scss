@@ -1,0 +1,13 @@
+$text-color: #212529;
+
+body {
+  background: linear-gradient(to right, #b3d1e2, #98b3e9);
+  color: $text-color;
+  margin: 20;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+h1 {
+  font-style: normal;
+  text-align: center;
+}

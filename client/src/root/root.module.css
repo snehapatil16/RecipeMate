@@ -1,0 +1,50 @@
+.navbar {
+  background-color: #82a587;
+  color : white;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  justify-content: space-between;
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  z-index: 1000;
+}
+body {
+  padding-top: 50px; 
+}
+  
+  .navMenu {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  .navItem {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .navItem:hover {
+    background-color: #da85b2; 
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .navMenu {
+      flex-direction: column;
+      width: 100%;
+    }
+    
+    .navItem {
+      text-align: center;
+      padding: 0.5rem;
+      width: 100%;
+      display: block;
+    }
+  }
+  
