@@ -8,6 +8,17 @@ You can run the entire project with just one command. This setup simplifies the 
 1. cd client -> `npm install --save-dev rimraf`
 2. cd server -> `npm run dev`
 
+### Screenshots
+
+Here are some screenshots showing various aspects of the project:
+
+![Screenshot 1](https://github.com/user-attachments/assets/8e5efd09-f2fc-4299-bed0-f0b74ab057f8)
+![Screenshot 2](https://github.com/user-attachments/assets/d262bf80-3434-4c25-a409-98fbca8f012c)
+![Screenshot 3](https://github.com/user-attachments/assets/32cb80e5-51bd-466a-be3a-1f18623d3795)
+![Screenshot 4](https://github.com/user-attachments/assets/b0a9ad5e-964f-491b-9ead-480010641b6b)
+![Screenshot 5](https://github.com/user-attachments/assets/37526aae-bdfd-40fb-8e14-56719cf13e52)
+
+
 ### Recipe Schema
 
 The `Recipe` schema represents the structure of the recipe data in the database. Each recipe has a name, description, image URL, preparation time, cooking time, an array of directions, and an array of ingredients.
