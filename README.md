@@ -1,5 +1,5 @@
 # Cookbook API Documentation
-# By Sneha Patil & Annika Sonne
+#### By Sneha Patil & Annika Sonne
 
 ### Running the Project
 
